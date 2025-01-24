@@ -28,15 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex gap-56">
-          <h1>Intoxicated Child Studio</h1>
+        <header className="flex justify-center">
+          <title>Intoxicated Child Studio</title>
           <a
-            className="hover:underline hover:underline-offset-4"
+            className="hover:underline hover:underline-offset-4 border-spacing-8 text-blue-500 bg-white rounded-xl"
             href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Intoxicated Child Studio
+            -- Please give me (some) feedback. / 意見回饋 --
           </a>
         </header>
         {children}

@@ -25,16 +25,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <header className="bg-gray-800 flex justify-between">
-          <div className="logo">Intoxicated Child Studio</div>
-          <div>
-            <button type="button" className="px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
-              <span className="text-gray-100">Please give me (some) feedback.</span>
-              <span className="text-indigo-400">意見回饋</span>
+      <body className="min-h-screen px-8 py-16 bg-black">
+        <header className="bg-black flex justify-between">
+          <div className="text-3xl font-mono">Intoxicated Child Studio</div>
+          <div className="grid items-start justify-center gap-8">
+            <div className=" relative group">
+              <div
+                className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
+                blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+              ></div>
+              <button
+                type="button"
+                className=" relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600"
+            >
+              <span className="pr-6 text-gray-100">Please give me (some) feedback.</span>
+              <span className="pl-6 text-indigo-400 transition duration-200 group-hover:text-gray-100">意見回饋</span>
             </button>
+            </div>
+            
           </div>
         </header>
         {children}

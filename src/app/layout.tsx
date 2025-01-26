@@ -25,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen px-8 py-16 bg-black">
+      <body className="min-h-screen px-8 py-8 bg-black">
         <header className="bg-black flex justify-between">
-          <div className="text-3xl font-mono">Intoxicated Child Studio</div>
+          <div className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400">Intoxicated Child Studio</div>
           <div className="grid items-start justify-center gap-8">
             <div className=" relative group">
               <div
@@ -36,10 +36,10 @@ export default function RootLayout({
               ></div>
               <button
                 type="button"
-                className=" relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600"
+                className=" relative px-3 py-1 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600"
             >
-              <span className="pr-6 text-gray-100">Please give me (some) feedback.</span>
-              <span className="pl-6 text-indigo-400 transition duration-200 group-hover:text-gray-100">意見回饋</span>
+              <span className="text-base font-mono pr-3 text-gray-100">Please give me (some) feedback.</span>
+              <span className="text-base font-mono pl-3 text-indigo-400 transition duration-200 group-hover:text-gray-100">意見回饋</span>
             </button>
             </div>
             

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const MailtoLink = (event: SyntheticEvent) => {
   event.preventDefault();
-  const email: string = "kuotsun.huang@gmail.com?subject=Please give me (some) feedback.";
+  const email: string = "kuotsun.huang@gmail.com";
   const mailto: string = 'mailto:${email}';
   window.location.href = mailto;
 };

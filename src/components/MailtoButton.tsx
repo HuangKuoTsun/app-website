@@ -5,8 +5,10 @@ import Button from "./Button";
 
 const MailtoLink = (event: SyntheticEvent) => {
   event.preventDefault();
-  const email: string = "kuotsun.huang@gmail.com";
-  const mailto = 'mailto:${email}';
+    const email: string = "kuotsun.huang@gmail.com";
+    const subject: string = "Please give me (some) feedback.";
+    const body: string = "这是邮件正文。";
+  const mailto = 'mailto:${ email }?subject=${ subject }&body=${ body }';
   window.location.href = mailto;
 };
 

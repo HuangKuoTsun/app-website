@@ -1,6 +1,14 @@
-// components/Button.tsx
+// components/Button.tsx 
 'use client'
-export default function Button({ children, onClick }) {
+
+import React from "react";
+
+interface ButtonProps {
+    children: React.ReactNode;
+    onClick: (Event: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+export default function Button({ children, onClick }: ButtonProps) {
     return (
         <button
             type="button"

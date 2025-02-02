@@ -1,5 +1,6 @@
 // components/MailtoButton.tsx
 'use client'
+
 import { SyntheticEvent } from "react";
 import Button from "./Button";
 

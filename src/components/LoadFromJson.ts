@@ -9,7 +9,7 @@ export interface JsonObject {
     Description: string;
 }
 
-// FilePath: string = '../public/JSON/AppDescription.json'
+// FilePath: string = '/JSON/AppDescription.json'
 export default async function JsonData( FilePath: string ): Promise<JsonObject[]> {
     const file = await fs.readFile(process.cwd() + FilePath, 'utf8');
     const data: JsonObject[] = JSON.parse(file);

@@ -5,7 +5,7 @@ import { JsonApplication, JsonObject } from "@/components/JsonApplication";
 export default async function Home() {
 
   let JsonData = new JsonApplication("/Application/Description.json");
-  let PageData = await JsonData.FetchJson();
+  let PageData: JsonObject[] = await JsonData.FetchJson();
   let image: string = PageData[0].Image;
   
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import JsonData from "@/components/LoadFromJson";
+import JsonData from "@/components/JsonApplication";
 
 export default async function Home() {
 

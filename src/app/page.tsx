@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-import JsonData from "@/components/JsonApplication";
+import { JsonApplication, JsonObject } from "@/components/JsonApplication";
 
 export default async function Home() {
 
-  const PageData = await JsonData("/Application/Description.json");
+  let JsonData = new JsonApplication("/Application/Description.json");
+  let PageData = await JsonData.FetchJson();
+  let image: string = PageData[0].Image;
   
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -13,7 +15,7 @@ export default async function Home() {
         <Image
           className="dark:invert"
           src="/next.svg"
-          //src="/Image/SolitaireChessGame.png"
+          //src= image
           alt="Next.js logo"
           width={180}
           height={38}

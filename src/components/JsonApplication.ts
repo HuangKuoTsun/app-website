@@ -8,58 +8,37 @@ export interface JsonObject {
         Promotional: string;
         Description: string;
 };
-
 export class JsonApplication {
 
-    const Service = new FetchService();
+    private Service = new FetchService();
 
-    const JsonPath: string = '/Application/Description.json';
+    private JsonPath: string;
+
+    constructor(JsonPath: string = '/Application/Description.json') {
+        this.JsonPath = JsonPath;
+    }
 
     // GET request
-    async function FetchJson( FilePath: string = JsonPath ): Promise<JsonObject[] | string> {
-        try {
-            const Data = await Service.Get<JsonObject[]>(FilePath);
-            return Data;
-        } catch (error) {
-            console.error('An error occurred:', error);
-            return ('An error occurred:' + String(error));
-        };
+    public async FetchJson(): Promise<JsonObject[]> {
+        const Data = await this.Service.Get<JsonObject[]>(this.JsonPath);
+        return Data;
     };
     
     // POST request
-    async function SendJson( FilePath: string = JsonPath ): Promise<JsonObject[] | string> {
-        try {
-            const Data = await Service.Post<JsonObject[]>(FilePath, {
-                key: 'value'
-            });
-            return Data;
-        } catch (error) {
-            console.error('An error occurred:', error);
-            return ('An error occurred:' + String(error));
-        };
+    public async SendJson(Body: JsonObject[]): Promise<JsonObject[]> {
+        const Data = await this.Service.Post<JsonObject[]>(this.JsonPath, Body);
+        return Data;
     };
 
     // PUT request
-    async function UpdateJson( FilePath: string = JsonPath ): Promise<JsonObject[] | string> {
-        try {
-            const Data = await Service.Put<JsonObject[]>(FilePath, {
-                key: 'new-value'
-            });
-            return Data;
-        } catch (error) {
-            console.error('An error occurred:', error);
-            return ('An error occurred:' + String(error));
-        };
+    public async UpdateJson(Body: JsonObject[]): Promise<JsonObject[]> {
+        const Data = await this.Service.Put<JsonObject[]>(this.JsonPath, Body);
+        return Data;
     };
 
     // DELETE request
-    async function DeleteJson( FilePath: string = JsonPath ): Promise<JsonObject[] | string> {
-        try {
-            const Data = await fetchService.delete<JsonObject[]>(FilePath);
-            return Data;
-        } catch (error) {
-            console.error('An error occurred:', error);
-            return ('An error occurred:' + String(error));
-        };
+    public async DeleteJson(): Promise<JsonObject[]> {
+        const Data = await this.Service.Delete<JsonObject[]>(this.JsonPath);
+        return Data;
     };
 };

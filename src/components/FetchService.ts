@@ -13,7 +13,7 @@ export class FetchService {
     };
     
     // POST Request : Send Data
-    async Post<T>(URL: string, Body: any): Promise<T> {
+    async Post<T>(URL: string, Body: T): Promise<T> {
         const Response = await fetch(URL, {
             method: 'POST',
             headers: {
@@ -29,7 +29,7 @@ export class FetchService {
     };
 
     // PUT Request : Update Data
-    async Put<T>(URL: string, Body: any): Promise<T> {
+    async Put<T>(URL: string, Body: T): Promise<T> {
         const Response = await fetch(URL, {
             method: 'PUT',
             headers: {

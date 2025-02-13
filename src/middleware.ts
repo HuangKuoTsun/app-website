@@ -25,22 +25,12 @@ export function middleware(request: NextRequest) {
         .trim()
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-nonce', nonce);
-    requestHeaders.set(
-        'Content-Security-Policy',
-        contentSecurityPolicyHeaderValue
-    );
+    requestHeaders.set('Content-Security-Policy',contentSecurityPolicyHeaderValue);
     const response = NextResponse.next({
         request: {
             headers: requestHeaders,
         },
     });
-    /*
-    response.headers.set(
-        'Content-Security-Policy',
-        contentSecurityPolicyHeaderValue
-    ); 
-    return NextResponse.next();
-    */
     return response;
 };
 

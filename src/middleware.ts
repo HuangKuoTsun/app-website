@@ -34,12 +34,14 @@ export function middleware(request: NextRequest) {
             headers: requestHeaders,
         },
     });
+    /*
     response.headers.set(
         'Content-Security-Policy',
         contentSecurityPolicyHeaderValue
-    );
+    ); 
+    return NextResponse.next();
+    */
     return response;
-    //return NextResponse.next();
 };
 
 export const config = {

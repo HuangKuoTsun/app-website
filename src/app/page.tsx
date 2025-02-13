@@ -23,7 +23,7 @@ export default async function Home() {
         <Image
           className="dark:invert"
           //src="/next.svg"
-          src={PageData[0].Image}
+          src={PageData[1].Image}
           //nonce={nonce}
           alt="Next.js logo"
           width={180}

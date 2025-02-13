@@ -4,9 +4,10 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
+
     const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
     const cspHeader =
-        `
+    `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic';
     style-src 'self' 'nonce-${nonce}';
@@ -38,6 +39,7 @@ export function middleware(request: NextRequest) {
         contentSecurityPolicyHeaderValue
     );
     return response;
+    //return NextResponse.next();
 };
 
 export const config = {

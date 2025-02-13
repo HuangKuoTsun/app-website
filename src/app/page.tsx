@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { AccessLocalJson, JsonObject } from "@/components/AccessLocalJson";
 import { headers } from 'next/headers';
-import Script from "next/script";
+//import Script from "next/script";
 
 export default async function Home() {
 
@@ -11,7 +11,7 @@ export default async function Home() {
   const protocol = (await headerData).get('x-forwarded-proto') ?? host?.startsWith('localhost') ? 'http' : 'https';
   const BaseURL = protocol + '://' + host;
 
-  const nonce = (await headerData).get('x-nonce');
+  //const nonce = (await headerData).get('x-nonce');
 
   let JsonData = new AccessLocalJson(BaseURL);
   let PageData: JsonObject[] = await JsonData.FetchJson();
@@ -24,7 +24,7 @@ export default async function Home() {
           className="dark:invert"
           //src="/next.svg"
           src={PageData[0].Image}
-          // nonce={nonce}
+          //nonce={nonce}
           alt="Next.js logo"
           width={180}
           height={38}

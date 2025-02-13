@@ -1,4 +1,4 @@
-// components/JsonApplication.ts
+// components/AccessLocalJson.ts
 
 import { FetchService } from './FetchService';
 
@@ -8,14 +8,14 @@ export interface JsonObject {
         Promotional: string;
         Description: string;
 };
-export class JsonApplication {
+
+export class AccessLocalJson {
 
     private Service = new FetchService();
-
     private JsonPath: string;
 
-    constructor(JsonPath: string = '/Application/Description.json') {
-        this.JsonPath = JsonPath;
+    constructor(BaseURL: string) {
+        this.JsonPath = BaseURL + '/Application/Description.json';
     }
 
     // GET request

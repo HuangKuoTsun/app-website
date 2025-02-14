@@ -10,11 +10,10 @@ export default async function Home() {
   const host = (await headerData).get('host');
   const protocol = (await headerData).get('x-forwarded-proto') ?? host?.startsWith('localhost') ? 'http' : 'https';
   const BaseURL = protocol + '://' + host;
-
-  //const nonce = (await headerData).get('x-nonce');
-
   let JsonData = new AccessLocalJson(BaseURL);
   let PageData: JsonObject[] = await JsonData.FetchJson();
+
+  //const nonce = (await headerData).get('x-nonce');
   
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

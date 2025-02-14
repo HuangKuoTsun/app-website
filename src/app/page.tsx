@@ -23,13 +23,13 @@ export default async function Home() {
           src={product.Image}
           alt="Product-Image"
           width={180}
-          height={38}
+          height={392}
           priority
           />
           <div className="flex flex-col gap-8">
-            <div> {product.Title} </div>
-            <div style={{ whiteSpace: 'pre-line' }}> {product.Promotional} </div>
-            <div style={{ whiteSpace: 'pre-line' }}> {product.Description} </div>
+            <div className="break-words"> {product.Title} </div>
+            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Promotional} </div>
+            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Description} </div>
           </div>
         </li>
       ))}

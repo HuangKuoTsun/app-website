@@ -10,8 +10,8 @@ export default async function Home() {
   const host = (await headerData).get('host');
   const protocol = (await headerData).get('x-forwarded-proto') ?? host?.startsWith('localhost') ? 'http' : 'https';
   const BaseURL = protocol + '://' + host;
-  let JsonData = new AccessLocalJson(BaseURL);
-  let PageData: JsonObject[] = await JsonData.FetchJson();
+  const JsonData = new AccessLocalJson(BaseURL);
+  const PageData: JsonObject[] = await JsonData.FetchJson();
 
   //const nonce = (await headerData).get('x-nonce');
   

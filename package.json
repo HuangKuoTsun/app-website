@@ -7,7 +7,7 @@
     "build": "next build && npm run move",
     "start": "next start",
     "lint": "next lint",
-    "move": "xcopy /e /i .next\\static .next\\standalone\\.next\\static"
+    "move": "cp -auv .next/static .next/standalone/.next/static"
   },
   "dependencies": {
     "react": "^19.0.0",

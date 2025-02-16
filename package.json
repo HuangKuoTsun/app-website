@@ -7,7 +7,7 @@
     "build": "next build && npm run move",
     "start": "next start",
     "lint": "next lint",
-    "move": "cp -auv .next/static .next/standalone/.next/static"
+    "move": "cp -af .next/static .next/standalone/.next/static && cp -af public .next/standalone/public"
   },
   "dependencies": {
     "react": "^19.0.0",

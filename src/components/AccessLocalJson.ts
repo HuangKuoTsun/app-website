@@ -15,7 +15,7 @@ export class AccessLocalJson {
     private JsonPath: string;
 
     constructor(BaseURL: string) {
-        this.JsonPath = BaseURL + '/Application/Description.json';
+        this.JsonPath = BaseURL + '/Description.json';
     }
 
     // GET request

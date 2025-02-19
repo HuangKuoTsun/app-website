@@ -29,8 +29,12 @@ export default async function Home() {
           />
           <div className="flex flex-col gap-8">
             <div className="break-words"> { product.Title } </div>
-            <div className="break-words"> { product.Promotional.replace(/\n/g,'<br />') } </div>
-            <div className="break-words"> { product.Description.replace(/\n/g,'<br />') } </div>
+            <div className="break-words"> {product.Promotional.map((line) => (
+              <div key={line}>{line}</div>
+            ))} </div>
+            <div className="break-words"> {product.Description.map((line) => (
+              <div key={line}>{line}</div>
+            ))} </div>
           </div>
         </li>
       ))}

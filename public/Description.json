@@ -2,19 +2,55 @@
     {
         "Title": "Solitaire-Chess Game",
         "Image": "/Application/SolitaireChessGame.png",
-        "Promotional": "A game that combines Go and Solitaire.\n 兼具圍棋及接龍的遊戲。",
-        "Description": "The game method is:\n First guess the random number problem, convert the random number into binary, and guess the number of non-zero digits. If you guess correctly, choose the position you want to move. If you guess wrong, the app will immediately block your Solitaire.\n 遊戲方法為:\n 先猜測亂數問題,將亂數化成二進位制,猜測非0位數的數目。若猜對,則選擇您欲下子的位置下子。若猜錯,則由app下子圍堵您的接龍。接龍以觸及四週邊界為勝!"
+        "Promotional": [
+            "A game that combines Go and Solitaire.",
+            "兼具圍棋及接龍的遊戲。"
+        ],
+        "Description": [
+            "The game method is:",
+            "First guess the random number problem, convert the random number into binary, and guess the number of non-zero digits. If you guess correctly, choose the position you want to move. If you guess wrong, the app will immediately block your Solitaire.",
+            "遊戲方法為:",
+            "先猜測亂數問題,將亂數化成二進位制,猜測非0位數的數目。若猜對,則選擇您欲下子的位置下子。若猜錯,則由app下子圍堵您的接龍。接龍以觸及四週邊界為勝!"
+        ]
     },
     {
         "Title": "Traditional-Pinball Machine",
         "Image": "/Application/TraditionalPinballMachine.png",
-        "Promotional": "Traditional pinball game\n 傳統的打彈珠台遊戲",
-        "Description": "You can set the physical parameters of the pinball machine:\n Such as the inclination angle of the pinball platform, the mass of the pinball, whether the bullet considers simple rolling,the elastic coeﬃcient of the spring, the variation of spring compression, etc.\n Scoring:\n If the marble lands in the center, the score is the lowest, and if the marble lands on the sides, the score is the highest.\n 可以設定彈珠台的物理參數:\n 如彈珠平台的傾斜角度、彈珠質量、彈是否考慮簡易滾動、彈簧的彈性係數、彈簧壓縮的變異量等。\n 計分方式:\n 彈珠落於中央分數最低,彈珠落於兩側分數最高。"
+        "Promotional": [
+            "Traditional pinball game",
+            "傳統的打彈珠台遊戲"
+        ],
+        "Description": [
+            "You can set the physical parameters of the pinball machine:",
+            "Such as the inclination angle of the pinball platform, the mass of the pinball, whether the bullet considers simple rolling,the elastic coeﬃcient of the spring, the variation of spring compression, etc.",
+            "Scoring:",
+            "If the marble lands in the center, the score is the lowest, and if the marble lands on the sides, the score is the highest.",
+            "可以設定彈珠台的物理參數:",
+            "如彈珠平台的傾斜角度、彈珠質量、彈是否考慮簡易滾動、彈簧的彈性係數、彈簧壓縮的變異量等。",
+            "計分方式:",
+            "彈珠落於中央分數最低,彈珠落於兩側分數最高。"
+        ]
     },
     {
         "Title": "Pinball-Machine Plus",
         "Image": "/Application/PinballMachinePlus.png",
-        "Promotional": "Enhanced version of pinball game\n 增強版的打彈珠台遊戲",
-        "Description": "You can set the physical parameters of the pinball machine:\n Such as the inclination angle of the pinball platform, the mass of the pinball, whether the bullet considers simple rolling, the elastic coeﬃcient of the spring, the variation of spring compression, etc.\n Scoring:\n If the marble lands in the center, the score is the lowest, and if the marble lands on the sides, the score is the highest.\n The target is at the top of the pinball machine, Enhanced mode:\n The target is upward, and acceleration due to gravity is taken into account. The game diﬃculty increases!\n 可以設定彈珠台的物理參數:\n 如彈珠平台的傾斜角度、彈珠質量、彈是否考慮簡易滾動、彈簧的彈性係數、彈簧壓縮的變異量等。\n 計分方式:\n 彈珠落於中央分數最低,彈珠落於兩側分數最高。\n 目標在彈珠台頂端，增強模式：\n 目標向上,並且考慮重力加速度。遊戲難度增高！"
+        "Promotional": [
+            "Enhanced version of pinball game",
+            "增強版的打彈珠台遊戲"
+        ],
+        "Description": [
+            "You can set the physical parameters of the pinball machine:",
+            "Such as the inclination angle of the pinball platform, the mass of the pinball, whether the bullet considers simple rolling, the elastic coeﬃcient of the spring, the variation of spring compression, etc.",
+            "Scoring:",
+            "If the marble lands in the center, the score is the lowest, and if the marble lands on the sides, the score is the highest.",
+            "The target is at the top of the pinball machine, Enhanced mode:",
+            "The target is upward, and acceleration due to gravity is taken into account. The game diﬃculty increases!",
+            "可以設定彈珠台的物理參數:",
+            "如彈珠平台的傾斜角度、彈珠質量、彈是否考慮簡易滾動、彈簧的彈性係數、彈簧壓縮的變異量等。",
+            "計分方式:",
+            "彈珠落於中央分數最低,彈珠落於兩側分數最高。",
+            "目標在彈珠台頂端，增強模式：",
+            "目標向上,並且考慮重力加速度。遊戲難度增高！"
+        ]
     }
 ]

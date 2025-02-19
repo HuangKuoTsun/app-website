@@ -22,8 +22,9 @@ export default async function Home() {
           <Image className="dark:invert"
             src={product.Image}
             alt="Product-Image"
-            width={330}
-            height={717}
+            width={220}
+            height={478}
+            layout="fixed"
             priority
           />
           <div className="flex flex-col gap-8">

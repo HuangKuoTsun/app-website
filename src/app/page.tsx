@@ -24,13 +24,12 @@ export default async function Home() {
             alt="Product-Image"
             width={330}
             height={717}
-            layout="fixed"
             priority
           />
           <div className="flex flex-col gap-8">
-            <div className="break-words"> {product.Title} </div>
-            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Promotional.split('\n').map(line => (<p>{ line }</p>))} </div>
-            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Description.split('\n').map(line => (<p>{ line }</p>))} </div>
+            <div className="break-words"> { product.Title } </div>
+            <div className="break-words"> { product.Promotional } </div>
+            <div className="break-words"> { product.Description } </div>
           </div>
         </li>
       ))}

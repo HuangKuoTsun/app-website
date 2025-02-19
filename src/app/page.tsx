@@ -20,16 +20,17 @@ export default async function Home() {
       {PageData.map((product) => (
         <li className="flex justify-around gap-8" key={product.Title}>
           <Image className="dark:invert"
-          src={product.Image}
-          alt="Product-Image"
-          width={180}
-          height={392}
-          priority
+            src={product.Image}
+            alt="Product-Image"
+            width={330}
+            height={717}
+            layout="fixed"
+            priority
           />
           <div className="flex flex-col gap-8">
             <div className="break-words"> {product.Title} </div>
-            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Promotional} </div>
-            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Description} </div>
+            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Promotional.split('\n').map(line => (<p>{ line }</p>))} </div>
+            <div className="break-words" style={{ whiteSpace: 'pre-line' }}> {product.Description.split('\n').map(line => (<p>{ line }</p>))} </div>
           </div>
         </li>
       ))}

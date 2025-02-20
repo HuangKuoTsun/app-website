@@ -31,7 +31,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Intoxicated-Child Studio</title>
       </head>
-      <body className={geistSans.variable + geistMono.variable + 'antialiased' + "min-h-screen px-8 py-8 bg-black"}>
+      <body
+        className={geistSans.variable + geistMono.variable + 'antialiased' + "min-h-screen px-8 py-8 bg-black overflow-x-auto"}
+      >
         <header className="bg-black flex justify-between fixed top-4 right-8 left-8 z-50 min-w-[880px]">
           <div
             className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"

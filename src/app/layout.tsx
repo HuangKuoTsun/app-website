@@ -32,9 +32,10 @@ export default function RootLayout({
         <title>Intoxicated-Child Studio</title>
       </head>
       <body className={geistSans.variable + geistMono.variable + 'antialiased' + "min-h-screen px-8 py-8 bg-black"}>
-        <header className="bg-black flex justify-between sm:flex-row md:flex-wrap fixed top-8 right-8 left-8 z-50 min-w-[880px]">
+        <header className="bg-black flex justify-between fixed top-4 right-8 left-8 z-50 min-w-[880px]">
           <div
-            className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400">Intoxicated-Child Studio
+            className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
+          >Intoxicated-Child Studio
           </div>
           <div className="grid items-start justify-center gap-8">
             <div className=" relative group">
@@ -49,6 +50,17 @@ export default function RootLayout({
         <div className="z-0 container mx-auto">
           {children}
         </div>
+        <footer className="bg-black flex justify-start fixed bottom-4 left-8 z-1 min-w-[880px]">
+          <div className="grid items-start justify-center gap-8">
+            <div className=" relative group">
+              <div
+                className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
+                blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+              ></div>
+              <MailtoButton />
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );

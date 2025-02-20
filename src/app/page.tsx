@@ -19,15 +19,17 @@ export default async function Home() {
     <div className="flex flex-col gap-20 mt-32 mx-8">
       {PageData.map((product: JsonObject, index: number) => (
         <li className="flex justify-around gap-8" key={index}>
-          <Image className="dark:invert"
-            src={product.Image}
-            alt="Product-Image"
-            width={220}
-            height={478}
-            layout="fixed"
-            priority
-          />
-          <div className="flex flex-col gap-8">
+          <div className="min-w-[220px]">
+            <Image className="dark:invert"
+              src={product.Image}
+              alt="Product-Image"
+              width={220}
+              height={478}
+              layout="fixed"
+              priority
+            />
+          </div>
+          <div className="flex flex-col gap-8 min-w-[660px]">
             <div className="break-words"> { product.Title } </div>
             <div className="break-words"> {product.Promotional.map((element: string, index: number) => (
               <div key={index}>{element}</div>

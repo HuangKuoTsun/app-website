@@ -17,8 +17,8 @@ export default async function Home() {
   
   return (
     <div className="flex flex-col gap-20 mt-32 mx-8">
-      {PageData.map((product) => (
-        <li className="flex justify-around gap-8" key={product.Title}>
+      {PageData.map((product: JsonObject, index: number) => (
+        <li className="flex justify-around gap-8" key={index}>
           <Image className="dark:invert"
             src={product.Image}
             alt="Product-Image"
@@ -29,11 +29,11 @@ export default async function Home() {
           />
           <div className="flex flex-col gap-8">
             <div className="break-words"> { product.Title } </div>
-            <div className="break-words"> {product.Promotional.map((line) => (
-              <div key={line}>{line}</div>
+            <div className="break-words"> {product.Promotional.map((element: string, index: number) => (
+              <div key={index}>{element}</div>
             ))} </div>
-            <div className="break-words"> {product.Description.map((line) => (
-              <div key={line}>{line}</div>
+            <div className="break-words"> {product.Description.map((element: string, index: number) => (
+              <div key={index}>{element}</div>
             ))} </div>
           </div>
         </li>

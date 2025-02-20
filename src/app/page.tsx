@@ -16,7 +16,7 @@ export default async function Home() {
   //const nonce = (await headerData).get('x-nonce');
   
   return (
-    <div className="flex flex-col gap-20 mt-32 mx-8">
+    <div className="flex flex-col sm:flex-row md:flex-wrap gap-20 mt-32 mx-8">
       {PageData.map((product: JsonObject, index: number) => (
         <li className="flex justify-around gap-8" key={index}>
           <div className="min-w-[220px]">

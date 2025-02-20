@@ -26,20 +26,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Intoxicated-Child Studio</title>
+      </head>
       <body className={geistSans.variable + geistMono.variable + 'antialiased' + "min-h-screen px-8 py-8 bg-black"}>
-        <header className="bg-black flex justify-between fixed top-8 right-8 left-8 z-50 min-w-[880px]">
-          <div className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400">Intoxicated-Child Studio</div>
+        <header className="bg-black flex justify-between sm:flex-row md:flex-wrap fixed top-8 right-8 left-8 z-50 min-w-[880px]">
+          <div
+            className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400">Intoxicated-Child Studio
+          </div>
           <div className="grid items-start justify-center gap-8">
             <div className=" relative group">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
               ></div>
-              <MailtoButton/>
+              <MailtoButton />
             </div>
           </div>
         </header>
-        <div className="z-0">
+        <div className="z-0 container mx-auto">
           {children}
         </div>
       </body>

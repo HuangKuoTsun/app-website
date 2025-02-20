@@ -32,15 +32,15 @@ export default function RootLayout({
         <title>Intoxicated-Child Studio</title>
       </head>
       <body
-        className={geistSans.variable + geistMono.variable + 'antialiased' + "min-h-screen px-8 py-8 bg-black overflow-x-auto"}
+        className={geistSans.variable + geistMono.variable + 'antialiased' + "min-h-screen px-8 py-8 bg-black overflow-x-scroll"}
       >
-        <header className="bg-black flex justify-between fixed top-4 right-8 left-8 z-50 min-w-[880px]">
+        <header className="bg-black flex justify-between fixed top-4 right-8 left-8 z-50 min-w-[768px]">
           <div
             className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
           >Intoxicated-Child Studio
           </div>
           <div className="grid items-start justify-center gap-8">
-            <div className=" relative group">
+            <div className=" relative group hidden md:block">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
@@ -52,9 +52,9 @@ export default function RootLayout({
         <div className="z-0 container mx-auto">
           {children}
         </div>
-        <footer className="bg-black flex justify-start fixed bottom-4 left-8 z-1 min-w-[880px]">
+        <footer className="bg-black flex justify-start fixed bottom-4 left-8 right-8 z-1 min-w-[640px]">
           <div className="grid items-start justify-center gap-8">
-            <div className=" relative group">
+            <div className=" relative group md:hidden">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"

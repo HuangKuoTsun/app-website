@@ -35,13 +35,13 @@ export default function RootLayout({
         className={geistSans.variable + geistMono.variable + 'antialiased'
           + "min-h-screen px-8 py-8  bg-black overflow-x-scroll"}
       >
-        <header className="bg-transparent flex justify-between sticky top-4 right-8 left-8 z-50 min-w-[768px]">
+        <header className="bg-transparent flex justify-between sticky top-4 right-8 left-8 z-50 min-w-[880px]">
           <div
-            className="text-xl md:text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
+            className="text-2xl max-[880px]:text-xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
           >Intoxicated-Child Studio
           </div>
           <div className="grid items-start justify-center gap-8">
-            <div className=" relative group hidden md:block">
+            <div className=" relative group max-[880px]:hidden">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
@@ -55,7 +55,7 @@ export default function RootLayout({
         </div>
         <footer className="bg-transparent flex justify-start sticky bottom-4 left-8 right-8 z-1 min-w-[640px]">
           <div className="grid items-start justify-center gap-8">
-            <div className=" relative group md:hidden">
+            <div className="relative group hidden max-[880px]:block">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"

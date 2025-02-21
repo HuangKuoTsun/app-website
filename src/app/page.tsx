@@ -30,13 +30,17 @@ export default async function Home() {
             />
           </div>
           <div className="flex flex-col gap-8 min-w-[660px]">
-            <div className="break-words"> { product.Title } </div>
-            <div className="break-words"> {product.Promotional.map((element: string, index: number) => (
+            <div className="break-words text-white"> { product.Title } </div>
+            <div className="break-words text-white">
+              {product.Promotional.map((element: string, index: number) => (
               <div key={index}>{element}</div>
-            ))} </div>
-            <div className="break-words"> {product.Description.map((element: string, index: number) => (
+              ))}
+            </div>
+            <div className="break-words text-white">
+              {product.Description.map((element: string, index: number) => (
               <div key={index}>{element}</div>
-            ))} </div>
+              ))}
+            </div>
           </div>
         </li>
       ))}

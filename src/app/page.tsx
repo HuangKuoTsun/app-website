@@ -29,7 +29,7 @@ export default async function Home() {
               priority
             />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 min-w-[628px]">
             <div className="break-words text-white"> { product.Title } </div>
             <div className="break-words text-white">
               {product.Promotional.map((element: string, index: number) => (

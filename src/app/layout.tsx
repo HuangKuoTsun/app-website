@@ -33,9 +33,9 @@ export default function RootLayout({
       </head>
       <body
         className={geistSans.variable + geistMono.variable + 'antialiased'
-          + "min-h-screen px-8 py-8  bg-black overflow-x-scroll"}
+          + "min-h-screen py-4  bg-black overflow-x-scroll container mx-4"}
       >
-        <header className="bg-transparent flex justify-between sticky top-4 right-8 left-8 z-50 min-w-[880px]">
+        <header className="bg-transparent flex justify-between sticky top-4 right-4 left-4 z-50 min-w-[880px]">
           <div
             className="text-2xl max-[880px]:text-xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
           >Intoxicated-Child Studio
@@ -50,10 +50,10 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        <div className="z-0 container mx-auto">
+        <div className="z-0">
           {children}
         </div>
-        <footer className="bg-transparent flex justify-start sticky bottom-4 left-8 right-8 z-1 min-w-[640px]">
+        <footer className="bg-transparent flex justify-start sticky bottom-4 left-4 z-1 min-w-[640px]">
           <div className="grid items-start justify-center gap-8">
             <div className="relative group hidden max-[880px]:block">
               <div

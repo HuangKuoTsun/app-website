@@ -16,9 +16,9 @@ export default async function Home() {
   //const nonce = (await headerData).get('x-nonce');
   
   return (
-    <div className="flex flex-col gap-20 mt-8 mx-8 overflow-x-scroll">
+    <div className="flex flex-col gap-20 mt-8 overflow-x-scroll">
       {PageData.map((product: JsonObject, index: number) => (
-        <li className="flex justify-around gap-8" key={index}>
+        <li className="flex justify-between right-4 left-4 gap-8" key={index}>
           <div className="min-w-[220px]">
             <Image className="dark:invert"
               src={product.Image}
@@ -29,7 +29,7 @@ export default async function Home() {
               priority
             />
           </div>
-          <div className="flex flex-col gap-8 min-w-[660px]">
+          <div className="flex flex-col gap-8">
             <div className="break-words text-white"> { product.Title } </div>
             <div className="break-words text-white">
               {product.Promotional.map((element: string, index: number) => (

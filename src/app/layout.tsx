@@ -33,7 +33,7 @@ export default function RootLayout({
       </head>
       <body
         className={geistSans.variable + geistMono.variable + 'antialiased'
-          + "min-h-screen py-4  bg-black overflow-x-scroll container mx-4"}
+          + "min-h-screen py-4  bg-black overflow-x-scroll mx-4"}
       >
         <header className="bg-transparent flex justify-between sticky top-4 right-4 left-4 z-50 min-w-[880px]">
           <div

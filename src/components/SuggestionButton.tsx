@@ -1,4 +1,4 @@
-// components/MailtoButton.tsx
+// components/SuggestionButton.tsx
 'use client'
 
 import { SyntheticEvent } from "react";
@@ -13,14 +13,14 @@ const MailtoLink = (event: SyntheticEvent) => {
   window.location.href = mailto;
 };
 
-export default function MailtoButton() {
+export default function SuggestionButton() {
     return (
         <Button onClick={MailtoLink}>
             <span className="text-base font-mono pr-3 text-gray-100">
-                Please give me (some) feedback.
+                Suggestion
             </span>
             <span className="text-base font-mono pl-3 text-indigo-400 transition duration-200 group-hover:text-gray-100">
-                意見回饋
+                回饋意見
             </span>
         </Button>
     );

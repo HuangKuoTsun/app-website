@@ -16,33 +16,31 @@ export default async function Home() {
   //const nonce = (await headerData).get('x-nonce');
   
   return (
-    <div className="flex flex-col gap-20 mt-8 overflow-x-scroll">
+    <div className="flex flex-col items-center gap-20 mt-8">
       {PageData.map((product: JsonObject, index: number) => (
-        <li className="flex justify-between right-4 left-4 gap-8" key={index}>
-          <div className="min-w-[220px]">
-            <Image className="dark:invert"
-              src={product.Image}
-              alt="Product-Image"
-              width={220}
-              height={478}
-              layout="fixed"
-              priority
-            />
-          </div>
-          <div className="flex flex-col gap-8 min-w-[628px]">
-            <div className="break-words text-white"> { product.Title } </div>
-            <div className="break-words text-white">
+        <figure className="flex justify-between right-4 left-4 gap-8" key={index}>
+          <Image className="dark:invert object-contain"
+            src={product.Image}
+            alt="Product-Image"
+            width={220}
+            height={478}
+            layout="fixed"
+            priority
+          />
+          <figcaption className="flex flex-col gap-8">
+            <blockquote className="break-words text-white"> { product.Title } </blockquote>
+            <blockquote className="break-words text-white">
               {product.Promotional.map((element: string, index: number) => (
               <div key={index}>{element}</div>
               ))}
-            </div>
-            <div className="break-words text-white">
+            </blockquote>
+            <blockquote className="break-words text-white">
               {product.Description.map((element: string, index: number) => (
               <div key={index}>{element}</div>
               ))}
-            </div>
-          </div>
-        </li>
+            </blockquote>
+          </figcaption>
+        </figure>
       ))}
     </div>
   );

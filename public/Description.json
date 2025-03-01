@@ -1,6 +1,7 @@
 [
     {
         "Title": "Solitaire-Chess Game",
+        "Classification": "Application",
         "Image": "/Application/SolitaireChessGame.png",
         "Promotional": [
             "A Game Combining Go and Solitaire.",
@@ -21,6 +22,7 @@
     },
     {
         "Title": "Traditional-Pinball Machine",
+        "Classification": "Application",
         "Image": "/Application/TraditionalPinballMachine.png",
         "Promotional": [
             "Traditional Pinball Machine Game",
@@ -44,6 +46,7 @@
     },
     {
         "Title": "Pinball-Machine Plus",
+        "Classification": "Application",
         "Image": "/Application/PinballMachinePlus.png",
         "Promotional": [
             "Enhanced Pinball Machine Game",
@@ -69,6 +72,19 @@
             "彈珠落於中央分數最低,彈珠落於兩側分數最高。目標在彈珠台頂端！",
             "增強模式：",
             "目標向上,並且考慮重力加速度。遊戲難度增高！"
+        ]
+    },
+    {
+        "Title": "NuNu",
+        "Classification": "High-Mountain Tea",
+        "Image": "/HighMountainTea/IntoxicatedChild.png",
+        "Promotional": [
+            "--",
+            "--"
+        ],
+        "Description": [
+            "--",
+            "--"
         ]
     }
 ]

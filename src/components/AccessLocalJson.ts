@@ -3,10 +3,11 @@
 import { FetchService } from './FetchService';
 
 export interface JsonObject {
-        Title: string;
-        Image: string;
-        Promotional: string[];
-        Description: string[];
+    Title: string;
+    Classification: string;
+    Image: string;
+    Promotional: string[];
+    Description: string[];
 };
 
 export class AccessLocalJson {

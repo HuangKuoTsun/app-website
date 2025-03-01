@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && npm run move",
+    "build": "next build && npm run move && npm run xmove",
     "start": "next start",
     "lint": "next lint",
-    "move": "cp -afv .next/static .next/standalone/.next/static && cp -afv public .next/standalone/public"
+    "move": "cp -afv .next/static .next/standalone/.next/static && cp -afv public .next/standalone/public",
+    "xmove": "mv -f .next/standalone ../output"
   },
   "dependencies": {
     "react": "^19.0.0",

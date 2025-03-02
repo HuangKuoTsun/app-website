@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "move": "cp -afv .next/static .next/standalone/.next/static && cp -afv public .next/standalone/public",
-    "xmove": "mv -f .next/standalone ../output"
+    "xmove": "rm -rf ../output/standalone && mv -f .next/standalone ../output"
   },
   "dependencies": {
     "react": "^19.0.0",

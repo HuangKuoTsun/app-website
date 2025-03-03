@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import SuggestionButton from "@/components/SuggestionButton";
+import PrivacyPolicyButton from "@/components/PrivacyPolicyButton";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,11 +38,11 @@ export default function RootLayout({
       >
         <header className="bg-transparent flex justify-between sticky top-4 right-4 left-4 z-50 w-[848px]">
           <div
-            className="text-2xl max-[880px]:text-xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
+            className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400"
           >Intoxicated-Child Studio
           </div>
           <div className="grid items-start justify-center gap-8">
-            <div className=" relative group max-[880px]:hidden">
+            <div className=" relative group">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
@@ -53,14 +54,14 @@ export default function RootLayout({
         <div className="z-0 w-[880px]">
           {children}
         </div>
-        <footer className="bg-transparent flex justify-start sticky bottom-4 left-4 z-1 w-[880px]">
+        <footer className="bg-transparent flex justify-start sticky bottom-4 left-4 z-1">
           <div className="grid items-start justify-center gap-8">
-            <div className="relative group hidden max-[880px]:block">
+            <div className="relative group">
               <div
                 className=" absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg 
                 blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
               ></div>
-              <SuggestionButton />
+              <PrivacyPolicyButton PrivacyPolicyName="Website" />
             </div>
           </div>
         </footer>

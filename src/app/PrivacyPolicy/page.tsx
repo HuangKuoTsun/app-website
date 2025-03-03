@@ -1,5 +1,7 @@
 // Website Privacy Policy
 
+import React from "react";
+
 export default async function PrivacyPolicy() {
     return (
         <blockquote>

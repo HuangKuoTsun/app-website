@@ -41,7 +41,7 @@ export default function RootLayout({
           "min-h-screen py-4  bg-black overflow-x-scroll mx-4"
         }
       >
-        <header className="bg-transparent flex justify-between sticky top-4 right-4 left-4 z-50 w-[848px]">
+        <header className="bg-transparent flex justify-between items-center sticky top-4 right-4 left-4 z-50 w-[848px]">
           <div className="text-2xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-red-300 via-green-400 to-blue-400">
             Intoxicated-Child Studio
           </div>

@@ -21,57 +21,28 @@
         ]
     },
     {
-        "Title": "Traditional Pinball-Machine",
+        "Title": "Voxel Reconstruct",
         "Classification": "Application",
-        "Image": "/Application/TraditionalPinballMachine.png",
+        "Image": "/Application/VoxelReconstruct.png",
         "Promotional": [
-            "Traditional Pinball Machine Game",
-            "傳統的打彈珠台遊戲"
+            "Assemble a large cube using building blocks of different arrangements and colors.",
+            "利用不同排列及顏色的積木組裝成一個大立方體。"
         ],
         "Description": [
-            "Players can customize the physical parameters of the pinball machine, such as:",
-            "The tilt angle of the platform",
-            "The mass of the pinball",
-            "Whether simple rolling physics are considered",
-            "The elasticity coefficient of the spring",
-            "The variation in spring compression",
-            "Scoring System:",
-            "Pinballs landing in the center score the lowest.",
-            "Pinballs landing on the sides score the highest.",
-            "可以設定彈珠台的物理參數:",
-            "如彈珠平台的傾斜角度、彈珠質量、彈珠是否考慮簡易滾動、彈簧的彈性係數、彈簧壓縮的變異量等。",
-            "計分方式:",
-            "彈珠落於中央分數最低,彈珠落於兩側分數最高。"
-        ]
-    },
-    {
-        "Title": "Pinball-Machine Plus",
-        "Classification": "Application",
-        "Image": "/Application/PinballMachinePlus.png",
-        "Promotional": [
-            "Enhanced Pinball Machine Game",
-            "增強版的打彈珠台遊戲"
-        ],
-        "Description": [
-            "Players can customize the physical parameters of the pinball machine, such as:",
-            "The tilt angle of the platform",
-            "The mass of the pinball",
-            "Whether simple rolling physics are considered",
-            "The elasticity coefficient of the spring",
-            "The variation in spring compression",
-            "Scoring System:",
-            "Pinballs landing in the center score the lowest.",
-            "Pinballs landing on the sides score the highest.",
-            "The goal is to reach the top of the pinball machine!",
-            "Enhanced Mode:",
-            "The objective is to move upward while considering gravitational acceleration.",
-            "Increased difficulty for a more challenging experience!",
-            "可以設定彈珠台的物理參數:",
-            "如彈珠平台的傾斜角度、彈珠質量、彈珠是否考慮簡易滾動、彈簧的彈性係數、彈簧壓縮的變異量等。",
-            "計分方式:",
-            "彈珠落於中央分數最低,彈珠落於兩側分數最高。目標在彈珠台頂端！",
-            "增強模式：",
-            "目標向上,並且考慮重力加速度。遊戲難度增高！"
+            "There are 729 unit cubes that together form a large 9 x 9 x 9 cube.",
+            "Each small cube is colored based on its distance from the center of the large cube",
+            "(rounded down to the nearest integer), with a gradient ranging from cool to warm colors.",
+            "From the outer layers, 10 connected cubes are removed at a time, for a total of 51 removals.",
+            "What remains is an irregular but connected cluster of 219 cubes at the very center.",
+            "Each set of 10 removed cubes is uniquely shaped and colored—no two are the same in both",
+            "form and color pattern.",
+            "Game Rule: Use the 51 pieces as building blocks to reassemble the structure.",
+            "During assembly, no isolated clusters or hollow spaces are allowed.",
+            "有一單位立方體共729顆,可以組成9x9x9的大立方體。",
+            "而小立方體的顏色安排是依小立方體中央距離大立方體中央的距離去除小數，給予一個顏色（由寒色系至暖色系）。",
+            "從週邊挖除10個相連接小立方體,共挖了51次。僅留下正中央不規則且相連的219個小立方體!",
+            "每次挖10顆的小立方體之排列的「形狀及顏色」,均不相同！",
+            "遊戲規則:積木組裝此51個零件,組裝過程不得形成孤島及空穴。"
         ]
     },
     {

@@ -1,6 +1,7 @@
 [
     {
         "Title": "Solitaire-Chess Game",
+        "URL": "https://apps.apple.com/app/id6742809581",
         "Classification": "Application",
         "Image": "/Application/SolitaireChessGame.png",
         "Promotional": [
@@ -22,6 +23,7 @@
     },
     {
         "Title": "Voxel Reconstruct",
+        "URL": "https://apps.apple.com/app/id6745428136",
         "Classification": "Application",
         "Image": "/Application/VoxelReconstruct.png",
         "Promotional": [
@@ -42,7 +44,38 @@
         ]
     },
     {
+        "Title": "Sudoku Reverie",
+        "URL": "https://apps.apple.com/app/id6745428136",
+        "Classification": "Application",
+        "Image": "/Application/SudokuReverie.png",
+        "Promotional": [
+            "Train your brain with classic Sudoku!",
+            "用經典數獨訓練你的大腦！"
+        ],
+        "Description": [
+            "Sudoku Rules and Features, Game Objective",
+            "   Fill the 9x9 grid with numbers so that:",
+            "      • Each row",
+            "      • Each column",
+            "      • Each 3x3 subgrid (commonly referred to as a “box”) contains all digits from 1 to 9 exactly once.",
+            "   Board Structure:",
+            "      • The entire board consists of 9 rows X 9 columns, totaling 81 cells.",
+            "      • The board is divided into 9 fixed 3x3 boxes (subgrids).",
+            "      • Each 3x3 box contains 9 individual cells.",
+            "數獨規則說明, 遊戲目標：",
+            "   在一個 9x9 的方格中填入數字，使得：",
+            "      • 每一列(Row)",
+            "      • 每一欄(Column)",
+            "      • 每一個 3x3 的固定小區（稱為「九宮格」）都恰好包含一次數字 1 到 9。",
+            "   棋盤結構：",
+            "      • 整個棋盤為: 9 列 X 9 欄，共 81 格。",
+            "      • 被劃分為 9 個固定小區的 3x3 九宮格區域。",
+            "      • 每個固定小區中的九宮格，包含 9 個格子。"
+        ]
+    },
+    {
         "Title": "NuNu",
+        "URL": "",
         "Classification": "High-Mountain Tea",
         "Image": "/HighMountainTea/IntoxicatedChild.png",
         "Promotional": [

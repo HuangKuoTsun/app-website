@@ -1,31 +1,36 @@
 import Image from "next/image";
 
 import { AccessLocalJson, JsonObject } from "@/components/AccessLocalJson";
-import { headers } from 'next/headers';
+import { headers } from "next/headers";
 //import Script from "next/script";
 
 export default async function Home() {
-
   const headerData = headers();
-  const host = (await headerData).get('host');
-  const protocol = (await headerData).get('x-forwarded-proto') ?? host?.startsWith('localhost') ? 'http' : 'https';
-  const BaseURL = protocol + '://' + host;
+  const host = (await headerData).get("host");
+  const protocol =
+    (await headerData).get("x-forwarded-proto") ?? host?.startsWith("localhost")
+      ? "http"
+      : "https";
+  const BaseURL = protocol + "://" + host;
   const JsonData = new AccessLocalJson(BaseURL);
   const PageData: JsonObject[] = await JsonData.FetchJson();
 
   //const nonce = (await headerData).get('x-nonce');
-  
+
   return (
     <div className="flex flex-col items-center gap-20 mt-8">
       {PageData.map((product: JsonObject, index: number) => (
         <div key={index}>
           <div className="relative flex py-5 items-center">
             <div className="flex-grow border-t border-gray-700"></div>
-            <span className=" flex-shrink mx-4 text-gray-700">{product.Classification}</span>
+            <span className=" flex-shrink mx-4 text-gray-700">
+              {product.Classification}
+            </span>
             <div className="flex-grow border-t border-gray-700"></div>
           </div>
           <figure className="flex justify-between right-4 left-4 gap-8">
-            <Image className="object-contain"
+            <Image
+              className="object-contain"
               src={product.Image}
               alt="Product-Image"
               width={220}
@@ -34,7 +39,10 @@ export default async function Home() {
               priority
             />
             <figcaption className="flex flex-col gap-8">
-              <blockquote className="break-words text-white"> {product.Title} </blockquote>
+              <blockquote className="break-words text-white">
+                {" "}
+                {product.Title}{" "}
+              </blockquote>
               <blockquote className="break-words text-white">
                 {product.Promotional.map((element: string, index: number) => (
                   <div key={index}>{element}</div>
@@ -45,6 +53,19 @@ export default async function Home() {
                   <div key={index}>{element}</div>
                 ))}
               </blockquote>
+              {product.URL && product.URL.trim() !== "" && (
+                <a
+                  href={product.URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-200 flex items-center gap-1 font-medium"
+                >
+                  <span role="img" aria-label="link" className="no-underline">
+                    🔗
+                  </span>
+                  Download on the App Store (遊戲下載)
+                </a>
+              )}
             </figcaption>
           </figure>
         </div>

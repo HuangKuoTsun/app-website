@@ -1,45 +1,45 @@
 // components/AccessLocalJson.ts
 
-import { FetchService } from './FetchService';
+import { FetchService } from "./FetchService";
 
 export interface JsonObject {
-    Title: string;
-    Classification: string;
-    Image: string;
-    Promotional: string[];
-    Description: string[];
-};
+  Title: string;
+  URL: string;
+  Classification: string;
+  Image: string;
+  Promotional: string[];
+  Description: string[];
+}
 
 export class AccessLocalJson {
+  private Service = new FetchService();
+  private JsonPath: string;
 
-    private Service = new FetchService();
-    private JsonPath: string;
+  constructor(BaseURL: string) {
+    this.JsonPath = BaseURL + "/Description.json";
+  }
 
-    constructor(BaseURL: string) {
-        this.JsonPath = BaseURL + '/Description.json';
-    }
+  // GET request
+  public async FetchJson(): Promise<JsonObject[]> {
+    const Data = await this.Service.Get<JsonObject[]>(this.JsonPath);
+    return Data;
+  }
 
-    // GET request
-    public async FetchJson(): Promise<JsonObject[]> {
-        const Data = await this.Service.Get<JsonObject[]>(this.JsonPath);
-        return Data;
-    };
-    
-    // POST request
-    public async SendJson(Body: JsonObject[]): Promise<JsonObject[]> {
-        const Data = await this.Service.Post<JsonObject[]>(this.JsonPath, Body);
-        return Data;
-    };
+  // POST request
+  public async SendJson(Body: JsonObject[]): Promise<JsonObject[]> {
+    const Data = await this.Service.Post<JsonObject[]>(this.JsonPath, Body);
+    return Data;
+  }
 
-    // PUT request
-    public async UpdateJson(Body: JsonObject[]): Promise<JsonObject[]> {
-        const Data = await this.Service.Put<JsonObject[]>(this.JsonPath, Body);
-        return Data;
-    };
+  // PUT request
+  public async UpdateJson(Body: JsonObject[]): Promise<JsonObject[]> {
+    const Data = await this.Service.Put<JsonObject[]>(this.JsonPath, Body);
+    return Data;
+  }
 
-    // DELETE request
-    public async DeleteJson(): Promise<JsonObject[]> {
-        const Data = await this.Service.Delete<JsonObject[]>(this.JsonPath);
-        return Data;
-    };
-};
+  // DELETE request
+  public async DeleteJson(): Promise<JsonObject[]> {
+    const Data = await this.Service.Delete<JsonObject[]>(this.JsonPath);
+    return Data;
+  }
+}

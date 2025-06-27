@@ -74,6 +74,26 @@
         ]
     },
     {
+        "Title": "Celestial Chess",
+        "URL": "https://apps.apple.com/app/id6746757206",
+        "Classification": "Application",
+        "Image": "/Application/CelestialChess.png",
+        "Promotional": [
+            "Unbound by rules, yet still drawn into the game.",
+            "縱然不知對弈規則,亦可與之對弈。"
+        ],
+        "Description": [
+            "Chinese Xiangqi, also known simply as Chinese Chess, is a time-honored two-player strategy game deeply rooted in Chinese culture. With a history spanning thousands of years, it reflects the profound influence of ancient military thought and tactical wisdom. The board consists of nine vertical lines and ten horizontal ones, divided by the “River of Chu and Han” in the center—symbolizing historical confrontation and territorial boundaries.",
+            "Each player commands a set of sixteen pieces, colored red or black, representing seven distinct roles: General, Advisor, Elephant, Horse, Chariot, Cannon, and Soldier. Every piece moves according to its own rules: the Chariot travels in straight lines, the Horse moves in an L-shape, the Cannon captures by leaping over a piece, and Soldiers advance steadily across the board, gaining new movement options once they cross the river. At the heart of the game lies the General; if it is checkmated, the match ends instantly.",
+            "Xiangqi is more than a contest of skills—it is a discipline of patience, foresight, and subtle strategy. Over centuries, a wide variety of openings and endgame patterns have emerged, elevating the game into an intricate art form. Though its rules are relatively easy to grasp, its depth offers endless fascination, captivating generations of players.",
+            "Whether in quiet corners of city parks, where elderly masters contemplate each move in silence, or in the rapid-fire clashes of online play, Xiangqi continues to thrive with undiminished charm. In peaceful moments of stillness, one may find joy in a game of Xiangqi—even without fully knowing the rules, for the flow of play itself invites one into a world of calm tension and ancient intellect.",
+            "中國象棋，又稱象棋，是一種歷史悠久的兩人對弈遊戲，廣泛流傳於華人文化圈。它起源可追溯至數千年前，承載著深厚的軍事思想與戰略智慧。棋盤為九宮八道，共有九條直線與十條橫線，中央以「楚河漢界」分隔敵我，象徵歷史上的對峙與對抗。",
+            "每位玩家分別操控紅或黑兩方，各有十六枚棋子，包含將（帥）、士（仕）、象（相）、馬、車、炮與兵（卒）等七種角色。每種棋子都有獨特的移動方式與職能，如車可橫直疾行、馬走日字、炮需隔子攻擊，而兵則逐漸向敵陣推進，過河後方得橫行。將（帥）則是全局之核心，若被將死，遊戲即宣告結束。",
+            "中國象棋不僅是技巧與智慧的較量，更蘊含著謀略與忍耐的哲學。在長久的歷史中，象棋發展出多樣的開局套路與殘局變化，使其成為一門深奧的藝術。雖然規則簡潔明瞭，但其中的變化與精妙，使無數對弈者流連忘返，樂在其中。",
+            "無論是街頭巷尾的老者靜坐對弈，還是線上棋盤中的快節奏交鋒，象棋始終保持著它的魅力與生命力。在平靜時光中與人對弈，或許你不需全懂規則，便能從一子一子的運籌帷幄中，感受到這場古老遊戲所傳遞的靜謐與張力。"
+        ]
+    },
+    {
         "Title": "NuNu",
         "URL": "",
         "Classification": "High-Mountain Tea",
